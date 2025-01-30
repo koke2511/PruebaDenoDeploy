@@ -5,7 +5,7 @@ import {startStandaloneServer } from "@apollo/server/standalone";
 import { resolvers } from "./resolvers.ts";
 import { schema } from "./schema.ts";
 
-const MONGO_URL = Deno.env.get("MONGO_URL");
+const MONGO_URL = "mongodb+srv://db_username:db_password@cluster-video.zxbq7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster-Video";
 
 if(!MONGO_URL) {
   throw new Error("Please provide a MONGO_URL");
